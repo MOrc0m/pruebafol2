@@ -1,0 +1,221 @@
+html {
+    min-height: 100%; 
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: purple; 
+    width: 100%;
+    height: 10vh; 
+}
+
+#navbar { 
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    width: auto;
+    height: 10vh;
+}
+
+label {
+    display: inline-block;
+}
+
+h3 {
+    text-align: center;
+}
+
+#registroForm {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 220, 207);
+    min-height: auto; /* Cambiado de height a min-height para ajustarse al contenido */
+    border-radius: 3px;
+    margin: 10px;
+    box-shadow: 0 0.5rem 0.5rem 0 rgba(30, 29, 29, 0.182);
+    padding-left: 15px;
+    padding-right: 25px;
+    gap: 30px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;   
+}
+
+#registroForm:hover {
+    box-shadow: 0 0.7rem 1rem 0 rgba(0, 0, 0, 0.444);
+}
+
+.error {
+    font-size: 0.5rem;
+}
+
+.boton {
+    margin-top: 150px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto; 
+    min-height: 100vh; 
+    margin: 0;
+    font-size: 16px; 
+}
+
+#llamadoalaccion {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#main {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 0;
+    height: auto; /* Cambiado a auto para ajustar la altura según el contenido */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+
+table {
+    margin-top: 0;
+    padding-top: 0;
+    empty-cells: show;
+    border-collapse: collapse; /* Para que los bordes se unan */
+    width: 100%; /* Ajusta el ancho de la tabla según tus necesidades */
+}
+
+table, th, td {
+    border: 1px solid black; /* Agrega bordes a la tabla y a las celdas */
+    padding: 10px; /* Espaciado interno en las celdas */
+    text-align: left; /* Alineación del texto en las celdas */
+}
+
+footer {
+    background-color: purple;
+    color: rgb(230, 225, 225);
+    text-align: center;
+    padding: 10px;
+    margin: 0; 
+}
+
+.enlaces {
+    text-decoration: none;
+    color: rgb(230, 225, 225);
+    margin: 5px;
+    border-radius: 3px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.enlaces:hover {
+    background-color: rgb(153, 0, 153);
+    text-decoration: underline;
+}
+
+@media (max-width: 320px) {
+    #navbar {
+        width: 90%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 480px) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 568px) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 640px) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (min-width: 1280px) and (orientation: landscape) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 1280px) and (orientation: portrait) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (max-width: 1024px) and (orientation: landscape) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 1024px) and (orientation: portrait) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}
+
+@media (min-width: 1440px) and (orientation: landscape) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr 1fr; 
+    }
+}
+
+@media (min-width: 1440px) and (orientation: portrait) {
+    #navbar {
+        width: 100%;
+    }
+    #main {
+        grid-template-columns: 1fr; 
+    }
+}

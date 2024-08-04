@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Declarion Solidaridad MMSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilosform.css">
+</head>
+
+<body onload="language()">
+
+ <header>
+    <img id="foto" src="logofol.svg" width="200">
+    <nav id="navbar">
+        <a href="index.html" class="enlaces" id="princ" data-key="princ">Principal</a>
+        <a href="firma.html" class="enlaces" id="firms" data-key="firms">Firma</a>
+    </nav>
+</header> 
+
+<div id="llamadoalaccion">
+<h1 id="titulo" data-key="titulo">
+    Ayudanos a luchar contra la represion!!!
+</h1>
+
+<p id="par1" data-key="par1">
+    ¡Únete a nuestra causa! Apoya nuestra demanda de cese inmediato a la criminalización de las organizaciones sociales en Argentina.
+</p>
+
+<p id="par2" data-key="par2">
+    Exigimos la liberación de los militantes detenidos, el cierre de causas judiciales injustas y la unidad en la lucha contra la represión. 
+</p>
+<p id="par3" data-key="par3">
+    ¡Organizarse no es delito! Tu firma es crucial para defender las libertades democráticas y proteger a los más vulnerables.
+
+</p>
+</div>
+<div id="main">
+
+
+    <div id="registroForm">
+        <h3 id="titform" data-key="titform">
+                Firme Aqui
+        </h3>
+       
+        <form>
+            <div id="formulario">
+                <input type="text" name="nombre" id="nombre" data-key="nombre" placeholder="nombre" minlength="4" required autocomplete="off">
+                <div class="error" id="errorNombre"></div>
+                <br>
+                <input type="text" name="apellido" id="ape" data-key="ape" placeholder="apellido" minlength="5" required autocomplete="off">
+                <div class="error" id="errorApe"></div>
+                <br>
+                <input type="text" name="organizacion" id="org" data-key="org" placeholder="org" minlength="3" required autocomplete="off">
+                <div class="error" id="errorOrg"></div>
+                <br>
+                <input type="mail" name="mail" placeholder="mail" id="mail" data-key="mail" minlength="10" required autocomplete="off">
+                <div class="error" id="errorMail"></div>
+                <br>
+                <input type="number" name="dni" id="dni" data-key="dni" placeholder="document" minlength="10" required autocomplete="off">
+                <div class="error" id="errorDni"></div>
+                <br>
+                <input type="checkbox"  id="concent" name="concent" checked>
+                <label for="concent" id="concenti" data-key="concenti">guardar datos</label>
+                <div class="error" id="errorConcent"></div>
+            </div>
+            <input class="boton" type="submit" value="submit" onclick="formValid()">
+            <input type="button" value="orgform" id="orgform">
+            <input type="button" value="person" id="person">
+        </form>
+    </div> 
+</div> 
+<table>
+    <caption id="firmas" data-key="firmas">Firmas</caption>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+
+</table>
+
+<footer> 
+    <input type="button" value="spanish" id="spanish">
+    <input type="button" value="english" id="english">
+    <p class="contentfoot">Made By:<a href="https://github.com/MOrc0m" class="enlaces">M0rc0m</a></p>
+    <p class="contentfoot">Campaña<a href="https://folweb.com.ar/" class="enlaces">Frente de organizaciones en lucha</a></p>
+</footer> 
+
+<script src="scriptsform.js"></script>
+</body>
+</html>
